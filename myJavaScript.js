@@ -32,7 +32,7 @@ function setTime(confettiTime){
 	var hours = 24 - today.getHours() + "h ";
 	var minutes = 60 - today.getMinutes() + "m ";
 	var seconds = 60 - today.getSeconds() + "s";
-
+	
 	if(days == "0d " && hours == "0h " && minutes == "0m " && seconds == "0s"){
 		confetti.render();
 		happyNewYear.innerHTML = "Happy New Year!";
