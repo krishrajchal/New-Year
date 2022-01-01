@@ -28,7 +28,7 @@ function sleep(ms) {
 }
 
 function setTime(confettiTime){
-	setInterval(() => {
+	for(;;){
 		var days = days_of_a_year(today.getFullYear()) - days_passed(today) + "d ";
 		var hours = 24 - today.getHours() + "h ";
 		var minutes = 60 - today.getMinutes() + "m ";
@@ -47,7 +47,7 @@ function setTime(confettiTime){
 		today = new Date();
 
 		sleep(1000);
-	}, 1000);
+	}
 }
 
 setTime(10000);
