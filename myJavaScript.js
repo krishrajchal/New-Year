@@ -30,9 +30,9 @@ function sleep(ms) {
 function setTime(confettiTime){
 	setInterval(() => {
 		var days = days_of_a_year(today.getFullYear()) - days_passed(today) + "d ";
-		var hours = 24 - today.getHours() + "h ";
-		var minutes = 60 - today.getMinutes() + "m ";
-		var seconds = 60 - today.getSeconds() + "s";
+		var hours = 23 - today.getHours() + "h ";
+		var minutes = 59 - today.getMinutes() + "m ";
+		var seconds = 59 - today.getSeconds() + "s";
 		
 		if(days == "0d " && hours == "0h " && minutes == "0m " && seconds == "0s"){
 			confetti.render();
