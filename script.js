@@ -25,7 +25,7 @@ function updateIsNewYear(){
 
 function updateClock(){
 	//days 
-	let days = Math.round(Math.abs(newYear.getTime() - today.getTime()) / 86400000);
+	let days = Math.round(Math.abs(newYear.getTime() - today.getTime()) / 86400000) -1;
 	
 	//hours 
 	let hours = 23 - today.getHours(); 
