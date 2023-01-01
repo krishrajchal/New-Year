@@ -11,7 +11,10 @@ var confettiIsRaining = false;
 var isNewYear = false;
 
 function updateIsNewYear(){
-	if((today - newYear == 0 || today.getDate() == newYear.getDate()) && !confettiIsRaining){
+	if(today - newYear == 0 || today.getDate() == newYear.getDate()){
+		if(confettiIsRaining){
+			return;
+		}
 		isNewYear = true;
 		confettiIsRaining = true;
 		text2.innerHTML = "";
