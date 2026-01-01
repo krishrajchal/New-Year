@@ -41,7 +41,6 @@ function updateClock(){
 
 	text.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 	
-	console.log(new Date(2022, 11, 27).getDay());
 	today = new Date();
 }
 
@@ -49,3 +48,4 @@ setInterval(() =>{
 	updateClock();
 	updateIsNewYear();
 }, 1000);
+
